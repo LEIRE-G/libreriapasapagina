@@ -9,6 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+    //añadir campos a la tabla libros
     public function up(): void
     {
         Schema::create('libros', function (Blueprint $table) {
@@ -24,4 +25,5 @@ return new class extends Migration
     {
         Schema::dropIfExists('libros');
     }
+
 };
