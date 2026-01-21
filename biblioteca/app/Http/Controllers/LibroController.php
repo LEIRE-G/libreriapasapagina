@@ -62,4 +62,10 @@ class LibroController extends Controller
     {
         //
     }
+
+    //falta el confirmar eliminacion
+    public function confirmDestroy(Libro $libro)
+    {
+        //
+    }
 }
