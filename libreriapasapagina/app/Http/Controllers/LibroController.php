@@ -12,7 +12,8 @@ class LibroController extends Controller
      */
     public function index()
     {
-        //
+        $libros = Libro::all();
+        return view('libro.index', compact('libros')); // Retorna la vista con la lista de libros
     }
 
     /**
