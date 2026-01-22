@@ -14,7 +14,11 @@ return new class extends Migration
     {
         Schema::create('libros', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('titulo');
+            $table->string('autor');
+            $table->integer('paginas');
+            $table->decimal('precio', 8, 2);
+            $table->timestamps();      
         });
     }
 
